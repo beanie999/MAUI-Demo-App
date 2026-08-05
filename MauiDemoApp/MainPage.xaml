@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiDemoApp.MainPage">
+
+    <VerticalStackLayout
+        Padding="30"
+        Spacing="25"
+        VerticalOptions="Center">
+
+        <Image
+            Source="dotnet_bot.png"
+            HeightRequest="60"
+            Aspect="AspectFit"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="MAUI Demo"
+            Style="{StaticResource Headline}"
+            HorizontalOptions="Center" />
+
+        <Entry
+            x:Name="UserIdEntry"
+            Placeholder="Enter user ID"
+            Completed="OnUserIdEntryCompleted"
+            Unfocused="OnUserIdEntryCompleted" />
+
+        <Entry
+            x:Name="CustomAttributeEntry"
+            Placeholder="Enter custom attribute value"
+            Completed="OnCustomAttributeEntryCompleted"
+            Unfocused="OnCustomAttributeEntryCompleted" />
+
+        <Button
+            x:Name="ButtonOne"
+            Text="Custom Event"
+            Clicked="OnCustomEventButtonClicked" />
+
+        <Button
+            x:Name="ButtonTwo"
+            Text="Handled Exception"
+            Clicked="OnHandledExceptionButtonClicked" />
+
+        <Button
+            x:Name="ButtonThree"
+            Text="Crash"
+            Clicked="OnCrashButtonClicked" />
+
+        <Button
+            x:Name="ButtonFour"
+            Text="Network Error"
+            Clicked="OnNetworkErrorButtonClicked" />
+
+        <Button
+            x:Name="ButtonFive"
+            Text="Distributed Trace"
+            Clicked="OnDistributedTraceButtonClicked" />
+
+        <Label
+            x:Name="StatusLabel"
+            Text="Tap a button"
+            HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

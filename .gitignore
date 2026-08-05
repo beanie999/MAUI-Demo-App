@@ -1,0 +1,19 @@
+# .NET
+bin/
+obj/
+*.user
+
+# Secrets - see Secrets.example.cs / .env.example for placeholders
+Secrets.cs
+.env
+
+# Node
+node_modules/
+npm-debug.log*
+newrelic_agent.log
+
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
